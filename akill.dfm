@@ -56,7 +56,7 @@ object AutoKill: TAutoKill
   end
   object ChkAutomKill: TCheckBox
     Left = 338
-    Top = 189
+    Top = 205
     Width = 81
     Height = 17
     Anchors = [akTop, akRight]
@@ -98,7 +98,7 @@ object AutoKill: TAutoKill
   end
   object ChkAutoHide: TCheckBox
     Left = 338
-    Top = 212
+    Top = 228
     Width = 71
     Height = 17
     Anchors = [akTop, akRight]
