@@ -25,45 +25,50 @@ object AutoKill: TAutoKill
     Caption = 'BoxButton'
   end
   object PshGetPid: TButton
-    Left = 292
-    Top = 14
+    Left = 344
+    Top = 15
     Width = 75
     Height = 25
+    Anchors = [akTop, akRight]
     Caption = 'GetPid'
     TabOrder = 0
     OnClick = PshGetPidClick
   end
   object PshKill: TButton
-    Left = 292
+    Left = 344
     Top = 46
     Width = 75
     Height = 25
+    Anchors = [akTop, akRight]
     Caption = 'Kill'
     TabOrder = 1
     OnClick = PshKillClick
   end
   object Quit: TButton
-    Left = 292
-    Top = 108
+    Left = 344
+    Top = 105
     Width = 75
     Height = 25
+    Anchors = [akTop, akRight]
     Caption = 'Quit'
     TabOrder = 2
     OnClick = QuitClick
   end
   object ChkAutomKill: TCheckBox
-    Left = 290
-    Top = 192
+    Left = 338
+    Top = 189
     Width = 81
     Height = 17
+    Anchors = [akTop, akRight]
     Caption = 'Auto Kill'
     TabOrder = 3
   end
   object PshHide: TButton
-    Left = 292
+    Left = 344
     Top = 136
     Width = 75
     Height = 25
+    Anchors = [akTop, akRight]
     Caption = 'Hide AutoKill'
     TabOrder = 4
     OnClick = PshHideClick
@@ -82,8 +87,8 @@ object AutoKill: TAutoKill
     OnKeyDown = GridListKeyDown
   end
   object PshHideProcess: TButton
-    Left = 320
-    Top = 76
+    Left = 344
+    Top = 77
     Width = 75
     Height = 25
     Anchors = [akTop, akRight]
@@ -92,7 +97,7 @@ object AutoKill: TAutoKill
     OnClick = PshHideProcessClick
   end
   object ChkAutoHide: TCheckBox
-    Left = 320
+    Left = 338
     Top = 212
     Width = 71
     Height = 17
