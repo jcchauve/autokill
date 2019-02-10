@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="AUTOKILL.exe"/>
+    <OBJFILES value="autokill.obj akill.obj piduti.obj WindowList.obj"/>
+    <RESFILES value="autokill.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) akill.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="Flatstyle_cb4.lib AudioIn.lib iocomp6.lib GR32_CB5.lib bcb2kaxserver.lib 
+      indy.lib dbxcds.lib dclocx.lib soaprtl.lib bcbie.lib nmfast.lib 
+      dbexpress.lib inetdbxpress.lib inetdbbde.lib bcbsmp.lib dsnapcon.lib 
+      dsnapcrba.lib visualdbclx.lib teeqr.lib dss.lib tee.lib teedb.lib 
+      teeui.lib qrpt.lib bdecds.lib cds.lib ibxpress.lib vcldbx.lib bdertl.lib 
+      adortl.lib dbrtl.lib vcldb.lib thmanager.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib thmanager.lib vcldb.lib dbrtl.lib adortl.lib bdertl.lib 
+      vcldbx.lib ibxpress.lib cds.lib bdecds.lib qrpt.lib teeui.lib teedb.lib 
+      tee.lib dss.lib teeqr.lib visualdbclx.lib dsnapcrba.lib dsnapcon.lib 
+      bcbsmp.lib inetdbbde.lib inetdbxpress.lib dbexpress.lib nmfast.lib 
+      bcbie.lib soaprtl.lib dclocx.lib dbxcds.lib indy.lib bcb2kaxserver.lib 
+      GR32_CB5.lib iocomp6.lib AudioIn.lib Flatstyle_cb4.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi vcldb.bpi adortl.bpi 
+      ibsmp.bpi bdertl.bpi qrpt.bpi teeui.bpi teedb.bpi tee.bpi vcldbx.bpi 
+      dss.bpi teeqr.bpi ibxpress.bpi dsnap.bpi vclie.bpi inetdb.bpi inet.bpi 
+      nmfast.bpi webdsnap.bpi bcbie.bpi dclocx.bpi bcb97axserver.bpi DCLUSR.bpi 
+      FlatStyle_Cb4.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="autokill.cpp"/>
+    <INCLUDEPATH value="&quot;..\..\thmanager\theme manager&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="&quot;..\..\thmanager\theme manager&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;..\..\thmanager\theme manager&quot; -I$(BCB)\include -I$(BCB)\include\vcl 
+      -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=c:\bcb6\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="autokill.cpp" FORMNAME="" UNITNAME="autokill" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="autokill.res" FORMNAME="" UNITNAME="autokill" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="akill.cpp" FORMNAME="AutoKill" UNITNAME="akill" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="piduti.cpp" FORMNAME="" UNITNAME="piduti" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WindowList.pas" FORMNAME="" UNITNAME="WindowList" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=ClaudioSoft
+FileDescription=Auto Kill
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\bcb6\Bin\VCLIDE50.bpl=Integrated Development Environment Specific Components
+c:\bcb6\Bin\direct50.bpl=Borland Direct IDE Package
+c:\bcb6\Bin\stride50.bpl=String Resource Editor IDE Package
+c:\bcb6\Bin\proide50.bpl=Borland Core IDE Package
+c:\bcb6\Bin\bcbpro50.bpl=C++Builder Professional IDE Package
+c:\bcb6\Bin\crbide50.bpl=Borland Core IDE CORBA Package
+c:\bcb6\Bin\bcbcxp50.bpl=Borland C++ Builder Code Explorer
+c:\bcb6\Bin\bcbent50.bpl=C++Builder Enterprise IDE Package
+c:\bcb6\Bin\bcbidl50.bpl=Borland C++Buidler Core IDL Package
+c:\bcb6\Bin\DbX50.bpl=(untitled)
+c:\bcb6\Projects\Bpl\opend.bpl=d:\bcb5eval\cbuilder5\Projects\Bpl\opend
+c:\bcb6\Projects\Bpl\dclusr50.bpl=Composants utilisateur Borland
+c:\bcb6\Projects\Bpl\CoolDBUtilities.bpl=CoolDBUtilities
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=notepad -autohide
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

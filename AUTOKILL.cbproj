@@ -1,0 +1,283 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F2FC20CB-75A2-4420-8790-92962CB2B626}</ProjectGuid>
+        <ProjectType>CppVCLApplication</ProjectType>
+        <MainSource>autokill.cpp</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <TargetedPlatforms>3</TargetedPlatforms>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <ProjectVersion>17.2</ProjectVersion>
+        <Platform Condition="'$(Platform)'==''">Win64</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win64)'!=''">
+        <Cfg_1_Win64>true</Cfg_1_Win64>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win64)'!=''">
+        <Cfg_2_Win64>true</Cfg_2_Win64>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Keys>CompanyName=ClaudioSoft;FileDescription=Auto Kill;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <SanitizedProjectName>AUTOKILL</SanitizedProjectName>
+        <DCC_AdditionalSwitches> -M</DCC_AdditionalSwitches>
+        <FinalOutputDir>.</FinalOutputDir>
+        <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+        <ILINK_LibraryPath>..\..\thmanager\theme manager;$(BDS)\Projects\Lib;$(BDS)\lib\obj;$(BDS)\lib;$(BDS)\lib\psdk;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+        <BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+        <BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+        <ILINK_AppType>Windows</ILINK_AppType>
+        <DCC_UnitSearchPath>.\;$(BDS)\lib;$(BDS)\lib\obj;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+        <TASM_IncludePath>..\..\thmanager\theme manager;$(BDS)\include;$(BDS)\include\vcl;$(TASM_IncludePath)</TASM_IncludePath>
+        <DCC_IncludePath>.\;$(BDS)\lib;$(BDS)\lib\obj;$(DCC_IncludePath)</DCC_IncludePath>
+        <BCC_PCHCache>true</BCC_PCHCache>
+        <PackageImports>rtl.bpi;vcl.bpi;vclx.bpi;bcbsmp.bpi;dbrtl.bpi;vcldb.bpi;adortl.bpi;ibsmp.bpi;bdertl.bpi;teeui.bpi;teedb.bpi;tee.bpi;dss.bpi;ibxpress.bpi;dsnap.bpi;vclie.bpi;inet.bpi;webdsnap.bpi;bcbie.bpi;DCLUSR.bpi;FlatStyle_Cb4.bpi;$(PackageImports)</PackageImports>
+        <BCC_IncludePath>..\..\thmanager\theme manager;$(BDS)\include;$(BDS)\include\vcl;$(BCC_IncludePath)</BCC_IncludePath>
+        <BCC_GenerateWindowsApp>true</BCC_GenerateWindowsApp>
+        <BRCC_IncludePath>..\..\thmanager\theme manager;$(BDS)\include;$(BDS)\include\vcl;$(BRCC_IncludePath)</BRCC_IncludePath>
+        <AllPackageLibs>rtl.lib;vcl.lib;vcldb.lib;dbrtl.lib;adortl.lib;dsnap.lib;dsnapcon.lib;teeui.lib;teedb.lib;tee.lib;dsnapcon.lib;bcbsmp.lib;inetdbxpress.lib;dbexpress.lib;bcbie.lib;soaprtl.lib;dbxcds.lib;indycore.lib;indysystem.lib</AllPackageLibs>
+        <TASM_AdditionalSwitches> /w2</TASM_AdditionalSwitches>
+        <ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <Debugger_RunParams>notepad -autohide</Debugger_RunParams>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Icon_MainIcon>AUTOKILL_Icon.ico</Icon_MainIcon>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <OutputExt>exe</OutputExt>
+        <BRCC_Defines>_DEBUG;$(BRCC_Defines)</BRCC_Defines>
+        <TASM_Defines>_DEBUG;$(TASM_Defines)</TASM_Defines>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <IncludePath>$(BDSINCLUDE)\windows\vcl;$(IncludePath)</IncludePath>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <BCC_UserSuppliedOptions> -tWM -Vx -r- -k -Ve</BCC_UserSuppliedOptions>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <IncludePath>$(BDSINCLUDE)\windows\vcl;$(IncludePath)</IncludePath>
+        <Icon_MainIcon>AUTOKILL_Icon.ico</Icon_MainIcon>
+        <TASM_Defines>_DEBUG;$(TASM_Defines)</TASM_Defines>
+        <BRCC_Defines>_DEBUG;$(BRCC_Defines)</BRCC_Defines>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <ILINK_LibraryPath>$(BDS)\lib\debug;$(ILINK_LibraryPath);$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+        <DCC_Define>DEBUG;$(DCC_Define);$(DCC_Define)</DCC_Define>
+        <DCC_AdditionalSwitches> -M -V</DCC_AdditionalSwitches>
+        <IntermediateOutputDir>Debug_Build</IntermediateOutputDir>
+        <TASM_Debugging>Full</TASM_Debugging>
+        <ILINK_DisableIncrementalLinking>true</ILINK_DisableIncrementalLinking>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <UsePackages>true</UsePackages>
+        <LinkPackageImports>rtl.bpi;vcl.bpi;vcldb.bpi;dbrtl.bpi;adortl.bpi;dsnap.bpi;teeui.bpi;teedb.bpi;tee.bpi;bcbsmp.bpi;bcbie.bpi</LinkPackageImports>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <LinkPackageStatics>dsnapcon.lib;inetdbxpress.lib;dbexpress.lib;soaprtl.lib;dbxcds.lib;indycore.lib;indysystem.lib</LinkPackageStatics>
+        <BCC_UserSuppliedOptions> -tWM -Vx -r- -k -Ve -k</BCC_UserSuppliedOptions>
+        <BCC_Defines>_DEBUG;$(BCC_Defines);$(BCC_Defines)</BCC_Defines>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+        <LinkPackageStatics>rtl.lib;vcl.lib;vcldb.lib;dbrtl.lib;adortl.lib;dsnap.lib;dsnapcon.lib;teeui.lib;teedb.lib;tee.lib;bcbsmp.lib;inetdbxpress.lib;dbexpress.lib;bcbie.lib;soaprtl.lib;dbxcds.lib;indycore.lib;indysystem.lib</LinkPackageStatics>
+        <BCC_Defines>_DEBUG;$(BCC_Defines);$(BCC_Defines)</BCC_Defines>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <ILINK_LibraryPath>$(BDS)\lib\release;$(ILINK_LibraryPath);$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <TASM_Debugging>None</TASM_Debugging>
+        <BCC_InlineFunctionExpansion>true</BCC_InlineFunctionExpansion>
+        <DCC_AdditionalSwitches> -M -$O+</DCC_AdditionalSwitches>
+        <IntermediateOutputDir>Release_Build</IntermediateOutputDir>
+        <BCC_OptimizationLevel>Level2</BCC_OptimizationLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <BCC_UserSuppliedOptions> -tWM -Vx -r- -k -Ve -r</BCC_UserSuppliedOptions>
+        <BCC_Defines>NDEBUG;$(BCC_Defines);$(BCC_Defines)</BCC_Defines>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
+        <BCC_Defines>NDEBUG;$(BCC_Defines);$(BCC_Defines)</BCC_Defines>
+    </PropertyGroup>
+    <ItemGroup>
+        <CppCompile Include="akill.cpp">
+            <BuildOrder>8</BuildOrder>
+            <Form>AutoKill</Form>
+            <DependentOn>akill.h</DependentOn>
+            <BuildOrder>2</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="autokill.cpp">
+            <BuildOrder>3</BuildOrder>
+            <BuildOrder>2</BuildOrder>
+        </CppCompile>
+        <ResFiles Include="autokill.res">
+            <BuildOrder>5</BuildOrder>
+            <BuildOrder>4</BuildOrder>
+        </ResFiles>
+        <CppCompile Include="piduti.cpp">
+            <BuildOrder>11</BuildOrder>
+            <BuildOrder>0</BuildOrder>
+        </CppCompile>
+        <DelphiCompile Include="WindowList.pas">
+            <BuildOrder>14</BuildOrder>
+            <BuildOrder>1</BuildOrder>
+        </DelphiCompile>
+        <FormResources Include="akill.dfm"/>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets"/>
+    <ProjectExtensions>
+        <Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+        <Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+        <BorlandProject>
+            <CPlusPlusBuilder.Personality>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">1</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">0</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">0</VersionInfo>
+                    <VersionInfo Name="PreRelease">0</VersionInfo>
+                    <VersionInfo Name="Special">0</VersionInfo>
+                    <VersionInfo Name="Private">0</VersionInfo>
+                    <VersionInfo Name="DLL">0</VersionInfo>
+                    <VersionInfo Name="Locale">1033</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName">ClaudioSoft</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileDescription">Auto Kill</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                </VersionInfoKeys>
+                <ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Bin\VCLIDE50.bpl">Integrated Development Environment Specific Components</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Bin\direct50.bpl">Borland Direct IDE Package</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Bin\stride50.bpl">String Resource Editor IDE Package</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Bin\proide50.bpl">Borland Core IDE Package</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Bin\bcbpro50.bpl">C++Builder Professional IDE Package</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Bin\crbide50.bpl">Borland Core IDE CORBA Package</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Bin\bcbcxp50.bpl">Borland C++ Builder Code Explorer</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Bin\bcbent50.bpl">C++Builder Enterprise IDE Package</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Bin\bcbidl50.bpl">Borland C++Buidler Core IDL Package</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Bin\DbX50.bpl">(untitled)</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Projects\Bpl\opend.bpl">d:\bcb5eval\cbuilder5\Projects\Bpl\opend</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Projects\Bpl\dclusr50.bpl">Composants utilisateur Borland</ExcludedPackages>
+                    <ExcludedPackages Name="c:\bcb6\Projects\Bpl\CoolDBUtilities.bpl">CoolDBUtilities</ExcludedPackages>
+                </ExcludedPackages>
+                <Debugging>
+                    <Debugging Name="DebugSourceDirs">$(BCB)\source\vcl</Debugging>
+                </Debugging>
+                <Parameters>
+                    <Parameters Name="RunParams">notepad -autohide</Parameters>
+                    <Parameters Name="Launcher"/>
+                    <Parameters Name="UseLauncher">0</Parameters>
+                    <Parameters Name="DebugCWD"/>
+                    <Parameters Name="HostApplication"/>
+                    <Parameters Name="RemoteHost"/>
+                    <Parameters Name="RemotePath"/>
+                    <Parameters Name="RemoteLauncher"/>
+                    <Parameters Name="RemoteCWD"/>
+                    <Parameters Name="RemoteDebug">0</Parameters>
+                </Parameters>
+                <Compiler>
+                    <Compiler Name="ShowInfoMsgs">0</Compiler>
+                    <Compiler Name="LinkDebugVcl">0</Compiler>
+                    <Compiler Name="LinkCGLIB">0</Compiler>
+                </Compiler>
+                <CORBA>
+                    <CORBA Name="AddServerUnit">1</CORBA>
+                    <CORBA Name="AddClientUnit">1</CORBA>
+                    <CORBA Name="PrecompiledHeaders">1</CORBA>
+                </CORBA>
+                <ProjectProperties>
+                    <ProjectProperties Name="AutoShowDeps">False</ProjectProperties>
+                    <ProjectProperties Name="ManagePaths">True</ProjectProperties>
+                    <ProjectProperties Name="VerifyPackages">False</ProjectProperties>
+                    <ProjectProperties Name="IndexFiles">False</ProjectProperties>
+                </ProjectProperties>
+                <Source>
+                    <Source Name="MainSource">autokill.cpp</Source>
+                </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\16.0\BPL\GR32_CB6.bpl">Graphics32</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\16.0\BPL\GR32_DSGN_CB6.bpl">GR32_DSGN_CB6</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k220.bpl">Package Serveurs Office 2000 Embarcadero C++Builder</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp220.bpl">Package Serveurs Office XP Embarcadero C++Builder</Excluded_Packages>
+                </Excluded_Packages>
+            </CPlusPlusBuilder.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">True</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+</Project>
